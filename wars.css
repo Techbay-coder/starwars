@@ -1,0 +1,120 @@
+/* wars.css */
+
+/* Global Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #380c20;
+  }
+  
+  h1,
+  h2 {
+    color: #8f3838;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #f2c365;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 32px;
+  }
+  
+  /* Main Styles */
+  main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .character-list,
+  .character-details {
+    flex-basis: 45%;
+  }
+  
+  h2 {
+    color: #546e7a;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Character List Styles */
+  .character-list ul {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+  }
+  
+  .character-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  .character-list li:hover {
+    background-color: #695ab9;
+  }
+  
+  .character-list .character-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  /* Character Details Styles */
+  .character-details #character-info {
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 300px;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .character-details #character-info h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .character-details #character-info p {
+    margin: 10px 0;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 600px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .character-list,
+    .character-details {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
